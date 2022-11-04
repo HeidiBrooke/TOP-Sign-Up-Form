@@ -115,13 +115,33 @@ input#gText:focus, input:focus {
     width: 248px;
     height: 32px;
     border: 1px solid rgb(60, 134, 219);
-    /* -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.3) inset;
-    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.3) inset;
-    box-shadow:0 1px 2px rgba(0, 0, 0, 0.3) inset; */
     outline: none;
     border-radius: 4px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+input:invalid {
+    border: 1px solid  rgb(228, 61, 61);;
+}
+
+input + span {
+    position: relative;
+  }
+
+input:required + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "*Passwords do not match.";
+    color: rgb(228, 61, 61);
+    padding: 5px 10px;
+    top: -8px;
+    left: -10px;
+    text-transform: none;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    font-stretch: none;
+  }
 
 .bottom-area {
     flex-direction: column;
@@ -152,3 +172,4 @@ a {
     color: rgb(114, 82, 52);
     font-weight: 500;
 }
+
