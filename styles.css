@@ -25,15 +25,14 @@ body, div {
     margin: 0px;
 }
 
-
-
-img {
-    width: 100%;
-    height: 100%;
-}
-
 .left-splash {
     width: 40%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(covene-BtHRjAiNDR4-unsplash.jpg);
+    height: auto;
 }
 
 .right-half {
@@ -41,7 +40,7 @@ img {
     width: 60%;
     justify-items: center;
     align-items: center;
-    gap: 64px;
+    gap: 0px;
     flex-direction: column;
 }
 
@@ -72,6 +71,8 @@ img {
 
 .form {
     /* border: solid 1px blue; */
+    margin-top: 56px;
+    margin-bottom: 48px;
     padding-top: 24px;
     padding-bottom: 32px;
     background-color: white;
@@ -109,17 +110,47 @@ form {
     gap: 3px;
 }
 
-input, textarea {
+input[type=text] {
     width: 248px;
     height: 32px;
     border: 1px solid rgb(209, 209, 209);
     border-radius: 4px;
 }
 
-input:focus, textarea:focus {
+input[type=text]:focus {
     width: 248px;
     height: 32px;
     border: 1px solid rgb(60, 134, 219);
     border-radius: 4px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.bottom-area {
+    flex-direction: column;
+    padding-left: 48px;
+    align-items: baseline;
+    font-size: 18px;
+    gap: 24px;
+}
+
+button {
+    width: 200px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(114, 82, 52);
+    color: white;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 8px;
+    color: rgb(114, 82, 52);
+    font-weight: 500;
 }
