@@ -9,6 +9,12 @@
 </head>
 <body>
     <div class="left-splash">
+        <div class="logo black-box"></div>
+        <div class="logo">
+            <img class="logo-img" src="TheraHub-removebg-preview.png" alt="">
+        </div>
+        
+
     </div>
     <div class="right-half">
         <div class="upper-text">
@@ -26,11 +32,11 @@
                         </div>
                         <div>
                             <label for="email">email</label>
-                            <input type="text" id="email" name="email">
+                            <input type="email" id="email" name="email">
                         </div>
                         <div>
                             <label for="password">password</label>
-                            <input type="text" id="password" name="password" required>
+                            <input type="password" id="password" name="password" minlength="7" required>
                             <span></span>
                         </div>
                     </div>
@@ -41,18 +47,18 @@
                         </div>
                         <div>
                             <label for="phone">phone number</label>
-                            <input type="text" id="phone" name="phone">
+                            <input type="text" id="phone" name="phone" pattern="(\d{10})">
                         </div>
                         <div>
                             <label for="password-confirm">confirm password</label>
-                            <input type="text" id="password-confirm" name="password-confirm" required>
+                            <input type="password" id="password-confirm" name="password-confirm" required>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
         <div class="bottom-area">
-            <button>Create Account</button>
+            <button class="button" type="submit">Create Account</button>
             <div>
                 <p>Already have an account?</p><a href="index.html">Log in</a>
             </div>
