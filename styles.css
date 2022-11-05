@@ -21,13 +21,13 @@ body, div {
 
 .left-splash {
     position: relative;
-    width: 40%;
-    height: 100%;
+    width: 40vw;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(covene-BtHRjAiNDR4-unsplash.jpg);
-    height: auto;
+    
 }
 
 .logo {
@@ -52,7 +52,8 @@ body, div {
 
 .right-half {
     font-size: 20px;
-    width: 100%;
+    width: 60vw;
+    height: 100vh;
     justify-items: center;
     /* align-items: center; */
     flex-direction: column;
