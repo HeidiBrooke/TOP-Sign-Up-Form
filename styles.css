@@ -20,6 +20,8 @@ body, div {
 }
 
 .left-splash {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 40vw;
     height: 100vh;
@@ -48,6 +50,10 @@ body, div {
 .logo-img {
     width: 100%;
     object-fit: cover;
+}
+
+.photo-credit {
+    align-self: flex-end;
 }
 
 .right-half {
@@ -196,7 +202,7 @@ button {
     transform: translateY(4px);
 }
 
-a {
+right-half a {
     display: flex;
     align-items: center;
     text-decoration: none;
